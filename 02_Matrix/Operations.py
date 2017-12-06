@@ -1,18 +1,16 @@
 matrix_a = [[0, 1], [2, 3]]
 matrix_b = [[0, 1], [2, 3]]
 
-matrix_c = [[0, 1, 2], [2, 3, 4]]
-
 
 # ordem da matrizes devem ser iguais
-def sumMatrix(ma, mb):
+def addMatrix(ma, mb):
     lines_a = len(ma)
     columns_a = len(ma[0])
     lines_b = len(mb)
     columns_b = len(mb[0])
 
     if lines_a is lines_b and columns_a is columns_b:
-        print('Soma')
+        print('Addition')
         mc = [[0 for y in range(columns_a)] for x in range(lines_a)]
         for i in range(lines_a):
             for j in range(columns_a):
@@ -23,7 +21,7 @@ def sumMatrix(ma, mb):
         print('Ordem das matrizes são diferentes!')
 
 
-sumMatrix(matrix_a, matrix_b)
+addMatrix(matrix_a, matrix_b)
 
 
 def subMatrix(ma, mb):
@@ -33,7 +31,7 @@ def subMatrix(ma, mb):
     columns_b = len(mb[0])
 
     if lines_a is lines_b and columns_a is columns_b:
-        print('Subtração')
+        print('Subtraction')
         mc = [[0 for y in range(columns_a)] for x in range(lines_a)]
         for i in range(lines_a):
             for j in range(columns_a):
@@ -54,7 +52,7 @@ def multMatrix(ma, mb):
     columns_b = len(mb[0])
 
     if columns_a is lines_b:
-        print('Multiplicação')
+        print('Multiplication')
         mc = [[0 for y in range(lines_a)] for x in range(columns_b)]
 
         for i in range(lines_a):
@@ -71,11 +69,13 @@ matrix_b = [[0, 1], [2, 3], [4, 5]]
 multMatrix(matrix_a, matrix_b)
 
 
+
+
 """
-Soma
+Addition
 [[0, 2], [4, 6]]
-Subtração
+Subtraction
 [[0, 0], [0, 0]]
-Multiplicação
+Multiplication
 [[10, 13], [34, 49]]
 """
