@@ -1,4 +1,4 @@
-vector = [1,2,3,4,5,6,7,8,9]
+vector = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 print('1 - Vector')
 print(vector)
 print()
@@ -8,36 +8,36 @@ print(vector[2])
 print()
 
 print('3 - Get by Range')
-#o último elemento é um limite superior aberto
+# o último elemento é um limite superior aberto
 print(vector[2:5])
 print(vector[:5])
-#todos elementos do vetor
+# todos elementos do vetor
 print(vector[:])
 print()
 
 print('4 - Print All by Index')
 for idx in range(len(vector)):
     element = vector[idx]
-    print(element, end = ' ')    
+    print(element, end=' ')
 print()
 print()
 
 print('5 - Print All by Element')
 for element in vector:
-    print(element, end= ' ')
+    print(element, end=' ')
 print()
 print()
 
 print('6 - Sum All by Index')
 sum = 0
-for idx in range(len(vector)):    
+for idx in range(len(vector)):
     sum += vector[idx]
 print(sum)
 print()
 
 print('7 - Sum All by Element')
 sum = 0
-for element in vector:    
+for element in vector:
     sum += element
 print(sum)
 print()
